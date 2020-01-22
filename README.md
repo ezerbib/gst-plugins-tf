@@ -33,6 +33,16 @@ pip install tensorflow-gpu==1.15
 ./run_example.sh
 ```
 
+### Run from youtube
+assume you have installed youtube-dl
+```bash
+pip install youtube-dl
+```
+
+```bash
+./run_youtube <youtube url>
+```
+
 ### To enable plugins implemented in **gst/python**
 ```bash
 export GST_PLUGIN_PATH=$GST_PLUGIN_PATH:$PWD/venv/lib/gstreamer-1.0/:$PWD/gst/
