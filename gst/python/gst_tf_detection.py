@@ -74,8 +74,8 @@ def create_config(device: str = 'CPU', *,
             config.gpu_options.per_process_gpu_memory_fraction = per_process_gpu_memory_fraction
         else:
             config.gpu_options.allow_growth = True
-    else:
-        config.device_count = {'GPU': 0}
+    #else:
+    #    config.device_count = {'CPU' : 1 } 
 
     return config
 
